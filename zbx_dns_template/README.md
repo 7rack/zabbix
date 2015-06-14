@@ -16,7 +16,7 @@ statistics-channels {
 
 ```
 UserParameter=bind.queries.in[*],curl http://127.0.0.1:8053/ 2>/dev/null | /usr/local/bin/xml2 | grep -A1 "/isc/bind/statistics/server/queries-in/rdtype/name=$1$" | tail -1 | cut -d= -f2
- UserParameter=bind.queries.out[*],curl http://127.0.0.1:8053/ 2>/dev/null | /usr/local/bin/xml2 | grep -A1 "/isc/bind/statistics/views/view/rdtype/name=$1$" | tail -1 | cut -d= -f2
+UserParameter=bind.queries.out[*],curl http://127.0.0.1:8053/ 2>/dev/null | /usr/local/bin/xml2 | grep -A1 "/isc/bind/statistics/views/view/rdtype/name=$1$" | tail -1 | cut -d= -f2
 ```
 
 ### Environment
