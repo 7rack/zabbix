@@ -1,0 +1,6 @@
+[submodule "zbx_nginx_template"]
+	path = zbx_nginx_template
+	url = https://github.com/vicendominguez/nginx-zabbix-template.git
+[submodule "zbx_apache_template"]
+	path = zbx_apache_template
+	url = https://github.com/gpmidi/zabbix-apache-stats.git
